@@ -1,0 +1,6 @@
+{
+  "name": "Markaz Qur'an",
+  "description": "Mediator Resmi Studi ke Al-Azhar Kairo Mesir - Lembaga Terdaftar Kemenkumham & Kemenag RI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-arabic: 'Amiri', serif;
+
+  --color-maroon-900: #3d0a12;
+  --color-maroon-800: #5a0f1c;
+  --color-maroon-700: #6b0f1a;
+  --color-maroon-600: #8b1a27;
+  --color-maroon-500: #a82535;
+
+  --color-gold-900: #8a6c1e;
+  --color-gold-700: #ab8b35;
+  --color-gold-500: #c9a84c;
+  --color-gold-400: #e8c96a;
+  --color-gold-100: #f9f0d7;
+
+  --color-emerald-deep: #1a4731;
+  --color-emerald-light: #22603f;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf7f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b0f1a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a0f1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2c060b;
+  color: #f9f0d7;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism definitions */
+.glass-header {
+  background: rgba(44, 6, 11, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-amber {
+  background: rgba(201, 168, 76, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.glass-card-heavy {
+  background: rgba(44, 6, 11, 0.75);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Mosque transition layer */
+.hero-mosque-overlay {
+  mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,1) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 40%, rgba(0,0,0,1) 100%);
+}
+
